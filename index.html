@@ -66,26 +66,33 @@
     /* Council cards */
     .council{grid-template-columns:repeat(1,minmax(0,1fr))}
     .member{display:flex;flex-direction:column;gap:.6rem}
-    .avatar{width:100%;aspect-ratio:4/3;border-radius:10px;background:#fff;border:1px solid var(--border);display:grid;place-items:center;overflow:hidden}
+    .avatar{width:100%;aspect-ratio:3/3;border-radius:10px;background:#fff;border:1px solid var(--border);display:grid;place-items:center;overflow:hidden}
     .avatar img{width:100%;height:100%;object-fit:cover}
-    .role{color:#fff;background:var(--red);display:inline-block;padding:.25rem .55rem;border-radius:999px;font-size:7px;font-weight:700}
+    .role{color:#fff;background:var(--red);display:inline-block;padding:.25rem .55rem;border-radius:999px;font-size:15px;font-weight:700}
     .contact-row{display:flex;flex-wrap:wrap;gap:.5rem}
     .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--border);border-radius:999px;padding:.35rem .6rem}
 
     /* Footer */
     .footer{margin-top:1.8rem;padding:1.2rem 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+
+    h1{
+      color: var(--red);
+    }
+    .logo{
+        height: 100px;
+    }
   </style>
 </head>
 <body>
   <!-- Header / Nav -->
   <header class="site-header">
     <div class="container nav-inner">
-      <div class="brand"><span class="brand-mark">S</span> <span>SRC</span></div>
+      <div class="brand"><img class="logo" src="src.png"></div>
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#quick-links">Quick Links</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#council">Meet the Council</a>
+       
+        <a href="#council">Council</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -97,6 +104,7 @@
       <div>
         <span class="tag">Your voice, our mission.</span>
         <h1>Student Representative Council</h1>
+        <h1>Capital City University</h1>
         <p class="sub">A welcoming hub for student communication, transparency, and engagement — all on one page.</p>
         <div class="cta-row">
           <a class="btn" href="#quick-links">News & Events</a>
@@ -176,11 +184,11 @@
         <article class="card member">
           <div class="avatar">
             <!-- Replace src with real photo path -->
-            <img alt="SRC President" src="https://placehold.co/640x480/ffffff/cc0000?text=President" />
+            <img alt="SRC President" src="/Users/nauwaraalibabakusa/Downloads/195BC453-298E-4C6F-B272-D64D6ED90A88.jpg" />
           </div>
           <div>
-            <span class="role">President</span>
-            <h3 style="margin:.4rem 0 0">Amina Bello</h3>
+            <span class="role">Chairman</span>
+            <h3 style="margin:.4rem 0 0">Muhsin babakusa</h3>
             <p class="muted" style="margin:.2rem 0 .6rem">Leads the council and represents students in management meetings.</p>
             <div class="contact-row">
               <a class="chip" href="mailto:president@example.edu">📧 Email</a>
@@ -196,8 +204,8 @@
             <img alt="Public Relations Officer" src="https://placehold.co/640x480/ffffff/cc0000?text=PRO" />
           </div>
           <div>
-            <span class="role">Public Relations Officer</span>
-            <h3 style="margin:.4rem 0 0">Ibrahim Musa</h3>
+            <span class="role">Vice-Chairman</span>
+            <h3 style="margin:.4rem 0 0">Fatima Yau</h3>
             <p class="muted" style="margin:.2rem 0 .6rem">Media, announcements, and student communications.</p>
             <div class="contact-row">
               <a class="chip" href="mailto:pro@example.edu">📧 Email</a>
@@ -213,8 +221,8 @@
             <img alt="Secretary" src="https://placehold.co/640x480/ffffff/cc0000?text=Secretary" />
           </div>
           <div>
-            <span class="role">Secretary</span>
-            <h3 style="margin:.4rem 0 0">Hadiza Ali</h3>
+            <span class="role">General-Secretary</span>
+            <h3 style="margin:.4rem 0 0">Arzika Muhammad</h3>
             <p class="muted" style="margin:.2rem 0 .6rem">Minutes, documentation, and official correspondence.</p>
             <div class="contact-row">
               <a class="chip" href="mailto:secretary@example.edu">📧 Email</a>
@@ -239,15 +247,15 @@
       <div class="grid two">
         <article class="card">
           <h3>Office Hours</h3>
-          <p>Mon–Fri, 10:00–15:00 · SRC Office (Student Affairs Building)</p>
-          <p>Email: <a href="mailto:src@example.edu">src@example.edu</a></p>
-          <p>Phone/WhatsApp: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          <p>Mon–Fri, 10:00am–4:00pm</p>
+          <p>Email: <a href="mailto:src@ccuk.edu.ng">src@ccuk.edu.ng</a></p>
+          <p>Phone/WhatsApp: <a href="tel:+2348097739705">+234 8097739705</a></p>
         </article>
         <article class="card">
           <h3>Groups & Social</h3>
           <ul>
             <li><a href="#">WhatsApp General Group</a></li>
-            <li><a href="#">Telegram Announcements Channel</a></li>
+    
             <li><a href="#">Instagram</a></li>
           </ul>
         </article>
