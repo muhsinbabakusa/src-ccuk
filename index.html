@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SRC — Your voice, our mission</title>
+  <style>
+    :root{
+      --red: #D62828;        /* primary red */
+      --red-600:#B61F1F;     /* darker red */
+      --ink:#121212;         /* body text */
+      --muted:#4b4b4b;       /* secondary text */
+      --bg:#ffffff;          /* page bg */
+      --card:#ffffff;        /* card bg */
+      --border:#efefef;      /* subtle borders */
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:var(--red);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:1.25rem}
+
+    /* Header / nav */
+    .site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .brand-mark{width:34px;height:34px;border-radius:10px;background:var(--red);display:grid;place-items:center;color:#fff;font-weight:900}
+    .nav a{padding:.55rem .7rem;color:var(--muted);border-radius:8px}
+    .nav a:hover{color:#fff;background:var(--red)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:1.5rem;align-items:center;padding:2.2rem 0}
+    .hero h1{font-size:clamp(1.8rem,3.2vw,3rem);margin:.2rem 0 .4rem}
+    .tag{display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:.35rem .6rem;border-radius:999px;font-size:.85rem}
+    .sub{color:var(--muted);margin:.3rem 0 1rem}
+    .cta-row{display:flex;gap:.6rem;flex-wrap:wrap}
+    .btn{display:inline-block;border:1px solid var(--red);background:var(--red);color:#fff;padding:.65rem .95rem;border-radius:10px;font-weight:700}
+    .btn.outline{background:transparent;color:var(--red)}
+    .hero-card{border:1px solid var(--border);border-radius:14px;padding:1rem;background:linear-gradient(180deg,#fff,#fff)}
+
+    /* Sections */
+    section{padding:1.2rem 0}
+    h2{font-size:clamp(1.3rem,2.2vw,2rem);margin:0 0 .6rem}
+    .muted{color:var(--muted)}
+
+    /* Quick links */
+    .quick-grid{display:grid;gap:.9rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .qlink{border:1px solid var(--border);border-left:6px solid var(--red);padding:1rem;border-radius:12px;background:var(--card);display:block}
+    .qlink strong{display:block;margin-bottom:.25rem}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}
+      
+    .council{grid-template-columns:repeat(3,minmax(1,1fr))}
+
+    }
+    
+
+
+    /* Highlights */
+    .grid{display:grid;gap:1rem}
+    .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      border:1px solid var(--border);border-radius:14px;padding:1rem;background:var(--card)}
+
+    /* Council cards */
+    .council{grid-template-columns:repeat(1,minmax(0,1fr))}
+    .member{display:flex;flex-direction:column;gap:.6rem}
+    .avatar{width:100%;aspect-ratio:4/3;border-radius:10px;background:#fff;border:1px solid var(--border);display:grid;place-items:center;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .role{color:#fff;background:var(--red);display:inline-block;padding:.25rem .55rem;border-radius:999px;font-size:7px;font-weight:700}
+    .contact-row{display:flex;flex-wrap:wrap;gap:.5rem}
+    .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--border);border-radius:999px;padding:.35rem .6rem}
+
+    /* Footer */
+    .footer{margin-top:1.8rem;padding:1.2rem 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand"><span class="brand-mark">S</span> <span>SRC</span></div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#quick-links">Quick Links</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#council">Meet the Council</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Overview -->
+    <section class="hero" id="about">
+      <div>
+        <span class="tag">Your voice, our mission.</span>
+        <h1>Student Representative Council</h1>
+        <p class="sub">A welcoming hub for student communication, transparency, and engagement — all on one page.</p>
+        <div class="cta-row">
+          <a class="btn" href="#quick-links">News & Events</a>
+          <a class="btn outline" href="#feedback">Send Feedback</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3 style="margin:.2rem 0 .5rem">Mission & Vision</h3>
+        <p><strong>Mission:</strong> Represent student interests, promote welfare, and bridge communication with university management.</p>
+        <p><strong>Vision:</strong> A united, empowered student body with a strong voice in campus life and policy.</p>
+      </aside>
+    </section>
+
+    <!-- Brief intro -->
+    <section>
+      <h2>What the SRC Does</h2>
+      <p class="muted">We advocate for students, organize programs (seminars, student week, sports), coordinate welfare initiatives, and publish updates and reports. Use the quick links to jump straight to what you need.</p>
+    </section>
+
+    <!-- Quick Links -->
+    <section id="quick-links">
+      <h2>Quick Links</h2>
+      <div class="quick-grid">
+        <a class="qlink" href="#news"><strong>Latest Announcements</strong><span class="muted">Important updates from SRC and management.</span></a>
+        <a class="qlink" href="#events"><strong>Upcoming Events</strong><span class="muted">Town-halls, seminars, and student week.</span></a>
+        <a class="qlink" href="#documents"><strong>Documents & Reports</strong><span class="muted">Constitution, minutes, budgets, proposals.</span></a>
+      </div>
+    </section>
+
+    <!-- Highlights / Current Projects
+    <section id="highlights">
+      <h2>Highlights — Current Focus</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Courtesy Visit to the Pro‑Chancellor</h3>
+          <p class="muted">Coordination of delegate list and discussion agenda. Students can express interest through the contact section.</p>
+        </article>
+        <article class="card">
+          <h3>Student Carnival Nominations</h3>
+          <p class="muted">Call for Carnival <strong>King/Queen</strong> and their cabinets. Submit names and portfolios via WhatsApp or email.</p>
+        </article>
+      </div>
+    </section> -->
+
+    <!-- News & Events (simple anchors)—static friendly  -->
+    <section id="news">
+      <h2>News & Announcements</h2>
+      <div class="grid">
+        <article class="card"><strong>01 Oct</strong> — Coming soon...</article>
+        <article class="card"><strong>28 Sep</strong> — Coming soon...</article>
+        <article class="card"><strong>20 Sep</strong> — Coming soon...</article>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="grid">
+        <article class="card"><strong>Events</strong> — Coming soon...</article>
+        <article class="card"><strong>Seminar</strong> — Coming soon...</article>
+      </div>
+    </section>
+
+    <!-- Documents -->
+    <!-- <section id="documents">
+      <h2>Documents</h2>
+      <ul>
+        <li><a href="#">SRC Constitution (PDF)</a></li>
+        
+      </ul>
+    </section> -->
+
+    <!-- Meet the Council -->
+    <section id="council">
+      <h2>Meet the Council</h2>
+      <div class="grid council">
+        <!-- Member 1 -->
+        <article class="card member">
+          <div class="avatar">
+            <!-- Replace src with real photo path -->
+            <img alt="SRC President" src="https://placehold.co/640x480/ffffff/cc0000?text=President" />
+          </div>
+          <div>
+            <span class="role">President</span>
+            <h3 style="margin:.4rem 0 0">Amina Bello</h3>
+            <p class="muted" style="margin:.2rem 0 .6rem">Leads the council and represents students in management meetings.</p>
+            <div class="contact-row">
+              <a class="chip" href="mailto:president@example.edu">📧 Email</a>
+              <a class="chip" href="tel:+2348000000000">📞 Phone</a>
+              <a class="chip" href="https://wa.me/2348000000000" target="_blank">🟢 WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Member 2 -->
+        <article class="card member">
+          <div class="avatar">
+            <img alt="Public Relations Officer" src="https://placehold.co/640x480/ffffff/cc0000?text=PRO" />
+          </div>
+          <div>
+            <span class="role">Public Relations Officer</span>
+            <h3 style="margin:.4rem 0 0">Ibrahim Musa</h3>
+            <p class="muted" style="margin:.2rem 0 .6rem">Media, announcements, and student communications.</p>
+            <div class="contact-row">
+              <a class="chip" href="mailto:pro@example.edu">📧 Email</a>
+              <a class="chip" href="tel:+2348000000001">📞 Phone</a>
+              <a class="chip" href="https://wa.me/2348000000001" target="_blank">🟢 WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Member 3 -->
+        <article class="card member">
+          <div class="avatar">
+            <img alt="Secretary" src="https://placehold.co/640x480/ffffff/cc0000?text=Secretary" />
+          </div>
+          <div>
+            <span class="role">Secretary</span>
+            <h3 style="margin:.4rem 0 0">Hadiza Ali</h3>
+            <p class="muted" style="margin:.2rem 0 .6rem">Minutes, documentation, and official correspondence.</p>
+            <div class="contact-row">
+              <a class="chip" href="mailto:secretary@example.edu">📧 Email</a>
+              <a class="chip" href="tel:+2348000000002">📞 Phone</a>
+              <a class="chip" href="https://wa.me/2348000000002" target="_blank">🟢 WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Feedback anchor (to link from top CTA; implementation can be external form) -->
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <p class="muted">For a purely static setup, link to a Google Form or Formspree form so students can submit suggestions/complaints (including anonymous submissions).</p>
+      <p><a class="btn outline" href="#contact">Go to Contact & Forms</a></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Office Hours</h3>
+          <p>Mon–Fri, 10:00–15:00 · SRC Office (Student Affairs Building)</p>
+          <p>Email: <a href="mailto:src@example.edu">src@example.edu</a></p>
+          <p>Phone/WhatsApp: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+        </article>
+        <article class="card">
+          <h3>Groups & Social</h3>
+          <ul>
+            <li><a href="#">WhatsApp General Group</a></li>
+            <li><a href="#">Telegram Announcements Channel</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Student Representative Council • Your voice, our mission.</div>
+  </footer>
+  <script>
+    // Optional: auto-insert current year (no external deps)
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
